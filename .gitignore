@@ -1,0 +1,5 @@
+/build
+/Dill_tils.egg-info
+/dist
+.dccache
+.env
