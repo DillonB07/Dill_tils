@@ -1,2 +1,2 @@
-from write import write
-from clear import clear
+from .write import write
+from .clear import clear

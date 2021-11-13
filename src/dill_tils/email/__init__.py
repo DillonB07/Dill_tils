@@ -1,1 +1,1 @@
-from email import Email
+from .email import Email

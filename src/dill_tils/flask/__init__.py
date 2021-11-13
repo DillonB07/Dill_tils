@@ -1,1 +1,1 @@
-from recaptcha import is_human
+from .recaptcha import is_human
