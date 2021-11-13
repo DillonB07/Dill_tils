@@ -1,4 +1,3 @@
-import os
 import smtplib
 from email.message import EmailMessage
 
@@ -6,7 +5,7 @@ from email.message import EmailMessage
 class Email:
     """Connect to SMTP server and send emails"""
 
-    def __init__(self, recipient: str, sender: str, password: str = os.environ['PASSWORD'], server: str = 'smtp.yandex.com', port: int = 465):
+    def __init__(self, recipient: str, sender: str, password: str, server: str = 'smtp.yandex.com', port: int = 465):
         """
         Connect to SMTP server and set variables for Email class
         """

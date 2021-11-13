@@ -1,9 +1,8 @@
-import os
 import requests
 import json
 
 
-def is_human(captcha_response: dict, secret: str = os.environ['CAPTCHA_SECRET_KEY']):
+def is_human(captcha_response: dict, secret: str):
     """
     Validating recaptcha response from google server
     Returns True captcha test passed for submitted form else returns False.
