@@ -1,6 +1,6 @@
-# Dill-tils
+# DilllonB07 Utilities
 
-Dill-tils is a package that has my commonly used functions inside it for ease of use.
+Dill_tils is a package that has my commonly used functions inside it for ease of use.
 
 ## Installation
 
@@ -9,37 +9,37 @@ Anyone can use this package by installing it from PyPi via one of the following 
 ### Pip
 
 ```zsh
-pip install Dill-tils
+pip install dill_tils
 ```
 
 ```zsh
-pip3 install Dill-tils
+pip3 install dill_tils
 ```
 
 ```zsh
-python -m pip install Dill-tils
+python -m pip install dill_tils
 ```
 
 ```zsh
-python3 -m pip install Dill-tils
+python3 -m pip install dill_tils
 ```
 
 ### Poetry
 
 ```zsh
-poetry install Dill-tils
+poetry install dill_tils
 ```
 
 ### Conda
 
 ```zsh
-conda install Dill-tils
+conda install dill_tils
 ```
 
 ### Pipenv
 
 ```zsh
-pipenv install Dill-tils
+pipenv install dill_tils
 ```
 
 ## Usage
