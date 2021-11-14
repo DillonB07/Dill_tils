@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charset_normalizer package &mdash; dill_tils 1.0.2 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> dill_tils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">charset_normalizer package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.api">charset_normalizer.api module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.cd">charset_normalizer.cd module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.constant">charset_normalizer.constant module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.legacy">charset_normalizer.legacy module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.md">charset_normalizer.md module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.models">charset_normalizer.models module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.utils">charset_normalizer.utils module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer.version">charset_normalizer.version module</a></li>
+<li><a class="reference internal" href="#module-charset_normalizer">Module contents</a><ul>
+<li><a class="reference internal" href="#charset-normalizer">Charset-Normalizer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">dill_tils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>charset_normalizer package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/charset_normalizer.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="charset-normalizer-package">
+<h1>charset_normalizer package<a class="headerlink" href="#charset-normalizer-package" title="Permalink to this headline"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-charset_normalizer.api">
+<span id="charset-normalizer-api-module"></span><h2>charset_normalizer.api module<a class="headerlink" href="#module-charset_normalizer.api" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.api.from_bytes">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.api.</span></span><span class="sig-name descname"><span class="pre">from_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><span class="pre">charset_normalizer.models.CharsetMatches</span></a></span></span><a class="headerlink" href="#charset_normalizer.api.from_bytes" title="Permalink to this definition"></a></dt>
+<dd><p>Given a raw bytes sequence, return the best possibles charset usable to render str objects.
+If there is no results, it is a strong indicator that the source is binary/not text.
+By default, the process will extract 5 blocs of 512o each to assess the mess and coherence of a given sequence.
+And will give up a particular code page after 20% of measured mess. Those criteria are customizable at will.</p>
+<p>The preemptive behavior DOES NOT replace the traditional detection workflow, it prioritize a particular code page
+but never take it for granted. Can improve the performance.</p>
+<p>You may want to focus your attention to some code page or/and not others, use cp_isolation and cp_exclusion for that
+purpose.</p>
+<p>This function will strip the SIG in the payload/sequence every time except on UTF-16, UTF-32.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.api.from_fp">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.api.</span></span><span class="sig-name descname"><span class="pre">from_fp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BinaryIO</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><span class="pre">charset_normalizer.models.CharsetMatches</span></a></span></span><a class="headerlink" href="#charset_normalizer.api.from_fp" title="Permalink to this definition"></a></dt>
+<dd><p>Same thing than the function from_bytes but using a file pointer that is already ready.
+Will not close the file pointer.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.api.from_path">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.api.</span></span><span class="sig-name descname"><span class="pre">from_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">os.PathLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><span class="pre">charset_normalizer.models.CharsetMatches</span></a></span></span><a class="headerlink" href="#charset_normalizer.api.from_path" title="Permalink to this definition"></a></dt>
+<dd><p>Same thing than the function from_bytes but with one extra step. Opening and reading given file path in binary mode.
+Can raise IOError.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.api.normalize">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.api.</span></span><span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">os.PathLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></span><a class="headerlink" href="#charset_normalizer.api.normalize" title="Permalink to this definition"></a></dt>
+<dd><p>Take a (text-based) file path and try to create another file next to it, this time using UTF-8.</p>
+</dd></dl>
+
+</section>
+<section id="module-charset_normalizer.cd">
+<span id="charset-normalizer-cd-module"></span><h2>charset_normalizer.cd module<a class="headerlink" href="#module-charset_normalizer.cd" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.alpha_unicode_split">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">alpha_unicode_split</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decoded_sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.alpha_unicode_split" title="Permalink to this definition"></a></dt>
+<dd><p>Given a decoded text sequence, return a list of str. Unicode range / alphabet separation.
+Ex. a text containing English/Latin with a bit a Hebrew will return two items in the resulting list;
+One containing the latin letters and the other hebrew.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.alphabet_languages">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">alphabet_languages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">characters</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ignore_non_latin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.alphabet_languages" title="Permalink to this definition"></a></dt>
+<dd><p>Return associated languages associated to given characters.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.characters_popularity_compare">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">characters_popularity_compare</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ordered_characters</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#charset_normalizer.cd.characters_popularity_compare" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if a ordered characters list (by occurrence from most appearance to rarest) match a particular language.
+The result is a ratio between 0. (absolutely no correspondence) and 1. (near perfect fit).
+Beware that is function is not strict on the match in order to ease the detection. (Meaning close match is 1.)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.coherence_ratio">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">coherence_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decoded_sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lg_inclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.coherence_ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Detect ANY language that can be identified in given sequence. The sequence will be analysed by layers.
+A layer = Character extraction by alphabets/ranges.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.encoding_languages">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">encoding_languages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iana_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.encoding_languages" title="Permalink to this definition"></a></dt>
+<dd><p>Single-byte encoding language association. Some code page are heavily linked to particular language(s).
+This function does the correspondence.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.encoding_unicode_range">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">encoding_unicode_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iana_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.encoding_unicode_range" title="Permalink to this definition"></a></dt>
+<dd><p>Return associated unicode ranges in a single byte code page.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.mb_encoding_languages">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">mb_encoding_languages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iana_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.mb_encoding_languages" title="Permalink to this definition"></a></dt>
+<dd><p>Multi-byte encoding language association. Some code page are heavily linked to particular language(s).
+This function does the correspondence.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.merge_coherence_ratios">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">merge_coherence_ratios</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.merge_coherence_ratios" title="Permalink to this definition"></a></dt>
+<dd><p>This function merge results previously given by the function coherence_ratio.
+The return type is the same as coherence_ratio.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.cd.unicode_range_languages">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.cd.</span></span><span class="sig-name descname"><span class="pre">unicode_range_languages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">primary_range</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.cd.unicode_range_languages" title="Permalink to this definition"></a></dt>
+<dd><p>Return inferred languages used with a unicode range.</p>
+</dd></dl>
+
+</section>
+<section id="module-charset_normalizer.constant">
+<span id="charset-normalizer-constant-module"></span><h2>charset_normalizer.constant module<a class="headerlink" href="#module-charset_normalizer.constant" title="Permalink to this headline"></a></h2>
+</section>
+<section id="module-charset_normalizer.legacy">
+<span id="charset-normalizer-legacy-module"></span><h2>charset_normalizer.legacy module<a class="headerlink" href="#module-charset_normalizer.legacy" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.legacy.</span></span><span class="sig-name descname"><span class="pre">CharsetDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetDetector" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.legacy.CharsetNormalizerMatches" title="charset_normalizer.legacy.CharsetNormalizerMatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.legacy.CharsetNormalizerMatches</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetDoctor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.legacy.</span></span><span class="sig-name descname"><span class="pre">CharsetDoctor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetDoctor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.legacy.CharsetNormalizerMatches" title="charset_normalizer.legacy.CharsetNormalizerMatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.legacy.CharsetNormalizerMatches</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetNormalizerMatch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.legacy.</span></span><span class="sig-name descname"><span class="pre">CharsetNormalizerMatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guessed_encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_mess_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_sig_or_bom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">languages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoded_payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetNormalizerMatch" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.models.CharsetMatch</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetNormalizerMatches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.legacy.</span></span><span class="sig-name descname"><span class="pre">CharsetNormalizerMatches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetNormalizerMatches" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.models.CharsetMatches</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetNormalizerMatches.from_bytes">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetNormalizerMatches.from_bytes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetNormalizerMatches.from_fp">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_fp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetNormalizerMatches.from_fp" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetNormalizerMatches.from_path">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetNormalizerMatches.from_path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.CharsetNormalizerMatches.normalize">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.legacy.CharsetNormalizerMatches.normalize" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.legacy.detect">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.legacy.</span></span><span class="sig-name descname"><span class="pre">detect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.legacy.detect" title="Permalink to this definition"></a></dt>
+<dd><p>chardet legacy method
+Detect the encoding of the given byte string. It should be mostly backward-compatible.
+Encoding name will match Chardet own writing whenever possible. (Not on encoding name unsupported by it)
+This function is deprecated and should be used to migrate your project easily, consult the documentation for
+further information. Not planned for removal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>byte_str</strong> – The byte sequence to examine.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-charset_normalizer.md">
+<span id="charset-normalizer-md-module"></span><h2>charset_normalizer.md module<a class="headerlink" href="#module-charset_normalizer.md" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.ArchaicUpperLowerPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">ArchaicUpperLowerPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.ArchaicUpperLowerPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.ArchaicUpperLowerPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.ArchaicUpperLowerPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.ArchaicUpperLowerPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.ArchaicUpperLowerPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.ArchaicUpperLowerPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.ArchaicUpperLowerPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.ArchaicUpperLowerPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.ArchaicUpperLowerPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.CjkInvalidStopPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">CjkInvalidStopPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.CjkInvalidStopPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<p>GB(Chinese) based encoding often render the stop incorrectly when the content does not fit and
+can be easily detected. Searching for the overuse of ‘丅’ and ‘丄’.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.CjkInvalidStopPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.CjkInvalidStopPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.CjkInvalidStopPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.CjkInvalidStopPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.CjkInvalidStopPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.CjkInvalidStopPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.CjkInvalidStopPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.CjkInvalidStopPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.MessDetectorPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">MessDetectorPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.MessDetectorPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base abstract class used for mess detection plugins.
+All detectors MUST extend and implement given methods.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.MessDetectorPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.MessDetectorPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.MessDetectorPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.MessDetectorPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.MessDetectorPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.MessDetectorPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.MessDetectorPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.MessDetectorPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuperWeirdWordPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">SuperWeirdWordPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.SuperWeirdWordPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuperWeirdWordPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuperWeirdWordPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuperWeirdWordPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuperWeirdWordPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuperWeirdWordPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.SuperWeirdWordPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuperWeirdWordPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuperWeirdWordPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousDuplicateAccentPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">SuspiciousDuplicateAccentPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousDuplicateAccentPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousDuplicateAccentPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousDuplicateAccentPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousDuplicateAccentPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousDuplicateAccentPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousDuplicateAccentPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.SuspiciousDuplicateAccentPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousDuplicateAccentPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousDuplicateAccentPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousRange">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">SuspiciousRange</span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousRange" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousRange.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousRange.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousRange.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousRange.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousRange.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.SuspiciousRange.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.SuspiciousRange.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.SuspiciousRange.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManyAccentuatedPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">TooManyAccentuatedPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.TooManyAccentuatedPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManyAccentuatedPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.TooManyAccentuatedPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManyAccentuatedPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.TooManyAccentuatedPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManyAccentuatedPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.TooManyAccentuatedPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManyAccentuatedPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.TooManyAccentuatedPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManySymbolOrPunctuationPlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">TooManySymbolOrPunctuationPlugin</span></span><a class="headerlink" href="#charset_normalizer.md.TooManySymbolOrPunctuationPlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManySymbolOrPunctuationPlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.TooManySymbolOrPunctuationPlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManySymbolOrPunctuationPlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.TooManySymbolOrPunctuationPlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManySymbolOrPunctuationPlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.TooManySymbolOrPunctuationPlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.TooManySymbolOrPunctuationPlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.TooManySymbolOrPunctuationPlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.md.UnprintablePlugin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">UnprintablePlugin</span></span><a class="headerlink" href="#charset_normalizer.md.UnprintablePlugin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.md.MessDetectorPlugin" title="charset_normalizer.md.MessDetectorPlugin"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.md.MessDetectorPlugin</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.UnprintablePlugin.eligible">
+<span class="sig-name descname"><span class="pre">eligible</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.UnprintablePlugin.eligible" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if given character should be fed in.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.UnprintablePlugin.feed">
+<span class="sig-name descname"><span class="pre">feed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.UnprintablePlugin.feed" title="Permalink to this definition"></a></dt>
+<dd><p>The main routine to be executed upon character.
+Insert the logic in witch the text would be considered chaotic.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.md.UnprintablePlugin.ratio">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ratio</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.md.UnprintablePlugin.ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute the chaos ratio based on what your feed() has seen.
+Must NOT be lower than 0.; No restriction gt 0.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.md.UnprintablePlugin.reset">
+<span class="sig-name descname"><span class="pre">reset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.md.UnprintablePlugin.reset" title="Permalink to this definition"></a></dt>
+<dd><p>Permit to reset the plugin to the initial state.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.md.is_suspiciously_successive_range">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">is_suspiciously_successive_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">unicode_range_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unicode_range_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.md.is_suspiciously_successive_range" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if two Unicode range seen next to each other can be considered as suspicious.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.md.mess_ratio">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.md.</span></span><span class="sig-name descname"><span class="pre">mess_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decoded_sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum_threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#charset_normalizer.md.mess_ratio" title="Permalink to this definition"></a></dt>
+<dd><p>Compute a mess ratio given a decoded bytes sequence. The maximum threshold does stop the computation earlier.</p>
+</dd></dl>
+
+</section>
+<section id="module-charset_normalizer.models">
+<span id="charset-normalizer-models-module"></span><h2>charset_normalizer.models module<a class="headerlink" href="#module-charset_normalizer.models" title="Permalink to this headline"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.models.</span></span><span class="sig-name descname"><span class="pre">CharsetMatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guessed_encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_mess_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_sig_or_bom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">languages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoded_payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.models.CharsetMatch" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.add_submatch">
+<span class="sig-name descname"><span class="pre">add_submatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.add_submatch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.alphabets">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">alphabets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.alphabets" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.best">
+<span class="sig-name descname"><span class="pre">best</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.best" title="Permalink to this definition"></a></dt>
+<dd><p>Kept for BC reasons. Will be removed in 3.0.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.bom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.bom" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.byte_order_mark">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byte_order_mark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.byte_order_mark" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.chaos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chaos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.chaos" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.chaos_secondary_pass">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chaos_secondary_pass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.chaos_secondary_pass" title="Permalink to this definition"></a></dt>
+<dd><p>Check once again chaos in decoded text, except this time, with full content.
+Use with caution, this can be very slow.
+Notice: Will be removed in 3.0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.coherence">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coherence</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.coherence" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.coherence_non_latin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coherence_non_latin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.coherence_non_latin" title="Permalink to this definition"></a></dt>
+<dd><p>Coherence ratio on the first non-latin language detected if ANY.
+Notice: Will be removed in 3.0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.could_be_from_charset">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">could_be_from_charset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.could_be_from_charset" title="Permalink to this definition"></a></dt>
+<dd><p>The complete list of encoding that output the exact SAME str result and therefore could be the originating
+encoding.
+This list does include the encoding available in property ‘encoding’.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.encoding">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">encoding</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.encoding" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.encoding_aliases">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">encoding_aliases</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.encoding_aliases" title="Permalink to this definition"></a></dt>
+<dd><p>Encoding name are known by many name, using this could help when searching for IBM855 when it’s listed as CP855.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.fingerprint">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fingerprint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.fingerprint" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the unique SHA256 computed using the transformed (re-encoded) payload. Not the original one.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.first">
+<span class="sig-name descname"><span class="pre">first</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.first" title="Permalink to this definition"></a></dt>
+<dd><p>Kept for BC reasons. Will be removed in 3.0.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.has_submatch">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_submatch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.has_submatch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.language">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">language</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.language" title="Permalink to this definition"></a></dt>
+<dd><p>Most probable language found in decoded sequence. If none were detected or inferred, the property will return
+“Unknown”.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.languages">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">languages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.languages" title="Permalink to this definition"></a></dt>
+<dd><p>Return the complete list of possible languages found in decoded sequence.
+Usually not really useful. Returned list may be empty even if ‘language’ property return something != ‘Unknown’.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.multi_byte_usage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">multi_byte_usage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.multi_byte_usage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.output">
+<span class="sig-name descname"><span class="pre">output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'utf_8'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.output" title="Permalink to this definition"></a></dt>
+<dd><p>Method to get re-encoded bytes payload using given target encoding. Default to UTF-8.
+Any errors will be simply ignored by the encoder NOT replaced.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.percent_chaos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">percent_chaos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.percent_chaos" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.percent_coherence">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">percent_coherence</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.percent_coherence" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.raw">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">raw</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bytes</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.raw" title="Permalink to this definition"></a></dt>
+<dd><p>Original untouched bytes.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.submatch">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">submatch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.submatch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatch.w_counter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">w_counter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">collections.Counter</span></em><a class="headerlink" href="#charset_normalizer.models.CharsetMatch.w_counter" title="Permalink to this definition"></a></dt>
+<dd><p>Word counter instance on decoded text.
+Notice: Will be removed in 3.0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.models.</span></span><span class="sig-name descname"><span class="pre">CharsetMatches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.models.CharsetMatches" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Container with every CharsetMatch items ordered by default from most probable to the less one.
+Act like a list(iterable) but does not implements all related methods.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatches.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatches.append" title="Permalink to this definition"></a></dt>
+<dd><p>Insert a single match. Will be inserted accordingly to preserve sort.
+Can be inserted as a submatch.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatches.best">
+<span class="sig-name descname"><span class="pre">best</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatches.best" title="Permalink to this definition"></a></dt>
+<dd><p>Simply return the first match. Strict equivalent to matches[0].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CharsetMatches.first">
+<span class="sig-name descname"><span class="pre">first</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.models.CharsetMatches.first" title="Permalink to this definition"></a></dt>
+<dd><p>Redundant method, call the method best(). Kept for BC reasons.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.models.CliDetectionResult">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.models.</span></span><span class="sig-name descname"><span class="pre">CliDetectionResult</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding_aliases</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alternative_encodings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphabets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_sig_or_bom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chaos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coherence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unicode_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_preferred</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.models.CliDetectionResult" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.models.CliDetectionResult.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#charset_normalizer.models.CliDetectionResult.to_json" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-charset_normalizer.utils">
+<span id="charset-normalizer-utils-module"></span><h2>charset_normalizer.utils module<a class="headerlink" href="#module-charset_normalizer.utils" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.any_specified_encoding">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">any_specified_encoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_zone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4096</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.utils.any_specified_encoding" title="Permalink to this definition"></a></dt>
+<dd><p>Extract using ASCII-only decoder any specified encoding in the first n-bytes.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.cp_similarity">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">cp_similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iana_name_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iana_name_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="headerlink" href="#charset_normalizer.utils.cp_similarity" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.iana_name">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">iana_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cp_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#charset_normalizer.utils.iana_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.identify_sig_or_bom">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">identify_sig_or_bom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bytes</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.utils.identify_sig_or_bom" title="Permalink to this definition"></a></dt>
+<dd><p>Identify and extract SIG/BOM in given sequence.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_accentuated">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_accentuated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_accentuated" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_ascii">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_ascii</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_ascii" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_case_variable">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_case_variable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_case_variable" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_cjk">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_cjk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_cjk" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_cp_similar">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_cp_similar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iana_name_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iana_name_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_cp_similar" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if two code page are at least 80% similar. IANA_SUPPORTED_SIMILAR dict was generated using
+the function cp_similarity.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_emoticon">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_emoticon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_emoticon" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_hangul">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_hangul</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_hangul" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_hiragana">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_hiragana</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_hiragana" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_katakana">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_katakana</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_katakana" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_latin">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_latin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_latin" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_multi_byte_encoding">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_multi_byte_encoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_multi_byte_encoding" title="Permalink to this definition"></a></dt>
+<dd><p>Verify is a specific encoding is a multi byte one based on it IANA name</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_private_use_only">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_private_use_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_private_use_only" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_punctuation">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_punctuation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_punctuation" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_separator">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_separator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_separator" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_symbol">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_symbol</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_symbol" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_thai">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_thai</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_thai" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.is_unicode_range_secondary">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">is_unicode_range_secondary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">range_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.is_unicode_range_secondary" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.range_scan">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">range_scan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decoded_sequence</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.utils.range_scan" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.remove_accent">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">remove_accent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#charset_normalizer.utils.remove_accent" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.should_strip_sig_or_bom">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">should_strip_sig_or_bom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iana_encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#charset_normalizer.utils.should_strip_sig_or_bom" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.utils.unicode_range">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.utils.</span></span><span class="sig-name descname"><span class="pre">unicode_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">character</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.utils.unicode_range" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the Unicode range official name from a single character.</p>
+</dd></dl>
+
+</section>
+<section id="module-charset_normalizer.version">
+<span id="charset-normalizer-version-module"></span><h2>charset_normalizer.version module<a class="headerlink" href="#module-charset_normalizer.version" title="Permalink to this headline"></a></h2>
+<p>Expose version</p>
+</section>
+<section id="module-charset_normalizer">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-charset_normalizer" title="Permalink to this headline"></a></h2>
+<section id="charset-normalizer">
+<h3>Charset-Normalizer<a class="headerlink" href="#charset-normalizer" title="Permalink to this headline"></a></h3>
+<p>The Real First Universal Charset Detector.
+A library that helps you read text from an unknown charset encoding.
+Motivated by chardet, This package is trying to resolve the issue by taking a new approach.
+All IANA character set names for which the Python core library provides codecs are supported.</p>
+<dl>
+<dt>Basic usage:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">charset_normalizer</span> <span class="kn">import</span> <span class="n">from_bytes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">results</span> <span class="o">=</span> <span class="n">from_bytes</span><span class="p">(</span><span class="s1">&#39;Bсеки човек има право на образование. Oбразованието!&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf_8&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">best_guess</span> <span class="o">=</span> <span class="n">results</span><span class="o">.</span><span class="n">best</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">str</span><span class="p">(</span><span class="n">best_guess</span><span class="p">)</span>
+<span class="go">&#39;Bсеки човек има право на образование. Oбразованието!&#39;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>Others methods and usages are available - see the full documentation
+at &lt;<a class="reference external" href="https://github.com/Ousret/charset_normalizer">https://github.com/Ousret/charset_normalizer</a>&gt;.
+:copyright: (c) 2021 by Ahmed TAHRI
+:license: MIT, see LICENSE for more details.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetDetector">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">CharsetDetector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetDetector" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.legacy.CharsetNormalizerMatches" title="charset_normalizer.legacy.CharsetNormalizerMatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.legacy.CharsetNormalizerMatches</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetDoctor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">CharsetDoctor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetDoctor" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.legacy.CharsetNormalizerMatches" title="charset_normalizer.legacy.CharsetNormalizerMatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.legacy.CharsetNormalizerMatches</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">CharsetMatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guessed_encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_mess_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_sig_or_bom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">languages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoded_payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetMatch" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.add_submatch">
+<span class="sig-name descname"><span class="pre">add_submatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatch.add_submatch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.alphabets">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">alphabets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.alphabets" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.best">
+<span class="sig-name descname"><span class="pre">best</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatch.best" title="Permalink to this definition"></a></dt>
+<dd><p>Kept for BC reasons. Will be removed in 3.0.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.bom">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.bom" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.byte_order_mark">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">byte_order_mark</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.byte_order_mark" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.chaos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chaos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.chaos" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.chaos_secondary_pass">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chaos_secondary_pass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.chaos_secondary_pass" title="Permalink to this definition"></a></dt>
+<dd><p>Check once again chaos in decoded text, except this time, with full content.
+Use with caution, this can be very slow.
+Notice: Will be removed in 3.0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.coherence">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coherence</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.coherence" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.coherence_non_latin">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">coherence_non_latin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.coherence_non_latin" title="Permalink to this definition"></a></dt>
+<dd><p>Coherence ratio on the first non-latin language detected if ANY.
+Notice: Will be removed in 3.0</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.could_be_from_charset">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">could_be_from_charset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.could_be_from_charset" title="Permalink to this definition"></a></dt>
+<dd><p>The complete list of encoding that output the exact SAME str result and therefore could be the originating
+encoding.
+This list does include the encoding available in property ‘encoding’.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.encoding">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">encoding</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.encoding" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.encoding_aliases">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">encoding_aliases</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.encoding_aliases" title="Permalink to this definition"></a></dt>
+<dd><p>Encoding name are known by many name, using this could help when searching for IBM855 when it’s listed as CP855.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.fingerprint">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fingerprint</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.fingerprint" title="Permalink to this definition"></a></dt>
+<dd><p>Retrieve the unique SHA256 computed using the transformed (re-encoded) payload. Not the original one.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.first">
+<span class="sig-name descname"><span class="pre">first</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatch.first" title="Permalink to this definition"></a></dt>
+<dd><p>Kept for BC reasons. Will be removed in 3.0.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.has_submatch">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">has_submatch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.has_submatch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.language">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">language</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.language" title="Permalink to this definition"></a></dt>
+<dd><p>Most probable language found in decoded sequence. If none were detected or inferred, the property will return
+“Unknown”.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.languages">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">languages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.languages" title="Permalink to this definition"></a></dt>
+<dd><p>Return the complete list of possible languages found in decoded sequence.
+Usually not really useful. Returned list may be empty even if ‘language’ property return something != ‘Unknown’.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.multi_byte_usage">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">multi_byte_usage</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.multi_byte_usage" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.output">
+<span class="sig-name descname"><span class="pre">output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'utf_8'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatch.output" title="Permalink to this definition"></a></dt>
+<dd><p>Method to get re-encoded bytes payload using given target encoding. Default to UTF-8.
+Any errors will be simply ignored by the encoder NOT replaced.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.percent_chaos">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">percent_chaos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.percent_chaos" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.percent_coherence">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">percent_coherence</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.percent_coherence" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.raw">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">raw</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bytes</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.raw" title="Permalink to this definition"></a></dt>
+<dd><p>Original untouched bytes.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.submatch">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">submatch</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.submatch" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatch.w_counter">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">w_counter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">collections.Counter</span></em><a class="headerlink" href="#charset_normalizer.CharsetMatch.w_counter" title="Permalink to this definition"></a></dt>
+<dd><p>Word counter instance on decoded text.
+Notice: Will be removed in 3.0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">CharsetMatches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetMatches" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Container with every CharsetMatch items ordered by default from most probable to the less one.
+Act like a list(iterable) but does not implements all related methods.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatches.append">
+<span class="sig-name descname"><span class="pre">append</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatches.append" title="Permalink to this definition"></a></dt>
+<dd><p>Insert a single match. Will be inserted accordingly to preserve sort.
+Can be inserted as a submatch.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatches.best">
+<span class="sig-name descname"><span class="pre">best</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatches.best" title="Permalink to this definition"></a></dt>
+<dd><p>Simply return the first match. Strict equivalent to matches[0].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetMatches.first">
+<span class="sig-name descname"><span class="pre">first</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.CharsetMatches.first" title="Permalink to this definition"></a></dt>
+<dd><p>Redundant method, call the method best(). Kept for BC reasons.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetNormalizerMatch">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">CharsetNormalizerMatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">guessed_encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean_mess_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_sig_or_bom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">languages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decoded_payload</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetNormalizerMatch" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.models.CharsetMatch</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetNormalizerMatches">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">CharsetNormalizerMatches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetNormalizerMatches" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><code class="xref py py-class docutils literal notranslate"><span class="pre">charset_normalizer.models.CharsetMatches</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetNormalizerMatches.from_bytes">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetNormalizerMatches.from_bytes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetNormalizerMatches.from_fp">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_fp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetNormalizerMatches.from_fp" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetNormalizerMatches.from_path">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetNormalizerMatches.from_path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="charset_normalizer.CharsetNormalizerMatches.normalize">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#charset_normalizer.CharsetNormalizerMatches.normalize" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.detect">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">detect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">byte_str</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#charset_normalizer.detect" title="Permalink to this definition"></a></dt>
+<dd><p>chardet legacy method
+Detect the encoding of the given byte string. It should be mostly backward-compatible.
+Encoding name will match Chardet own writing whenever possible. (Not on encoding name unsupported by it)
+This function is deprecated and should be used to migrate your project easily, consult the documentation for
+further information. Not planned for removal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>byte_str</strong> – The byte sequence to examine.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.from_bytes">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">from_bytes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequences</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><span class="pre">charset_normalizer.models.CharsetMatches</span></a></span></span><a class="headerlink" href="#charset_normalizer.from_bytes" title="Permalink to this definition"></a></dt>
+<dd><p>Given a raw bytes sequence, return the best possibles charset usable to render str objects.
+If there is no results, it is a strong indicator that the source is binary/not text.
+By default, the process will extract 5 blocs of 512o each to assess the mess and coherence of a given sequence.
+And will give up a particular code page after 20% of measured mess. Those criteria are customizable at will.</p>
+<p>The preemptive behavior DOES NOT replace the traditional detection workflow, it prioritize a particular code page
+but never take it for granted. Can improve the performance.</p>
+<p>You may want to focus your attention to some code page or/and not others, use cp_isolation and cp_exclusion for that
+purpose.</p>
+<p>This function will strip the SIG in the payload/sequence every time except on UTF-16, UTF-32.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.from_fp">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">from_fp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fp</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BinaryIO</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><span class="pre">charset_normalizer.models.CharsetMatches</span></a></span></span><a class="headerlink" href="#charset_normalizer.from_fp" title="Permalink to this definition"></a></dt>
+<dd><p>Same thing than the function from_bytes but using a file pointer that is already ready.
+Will not close the file pointer.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.from_path">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">from_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">os.PathLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">explain</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatches" title="charset_normalizer.models.CharsetMatches"><span class="pre">charset_normalizer.models.CharsetMatches</span></a></span></span><a class="headerlink" href="#charset_normalizer.from_path" title="Permalink to this definition"></a></dt>
+<dd><p>Same thing than the function from_bytes but with one extra step. Opening and reading given file path in binary mode.
+Can raise IOError.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="charset_normalizer.normalize">
+<span class="sig-prename descclassname"><span class="pre">charset_normalizer.</span></span><span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">os.PathLike</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_isolation</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cp_exclusion</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">preemptive_behaviour</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#charset_normalizer.models.CharsetMatch" title="charset_normalizer.models.CharsetMatch"><span class="pre">charset_normalizer.models.CharsetMatch</span></a></span></span><a class="headerlink" href="#charset_normalizer.normalize" title="Permalink to this definition"></a></dt>
+<dd><p>Take a (text-based) file path and try to create another file next to it, this time using UTF-8.</p>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, DillonB07.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+charset\_normalizer package
+===========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   charset_normalizer.assets
+   charset_normalizer.cli
+
+Submodules
+----------
+
+charset\_normalizer.api module
+------------------------------
+
+.. automodule:: charset_normalizer.api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.cd module
+-----------------------------
+
+.. automodule:: charset_normalizer.cd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.constant module
+-----------------------------------
+
+.. automodule:: charset_normalizer.constant
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.legacy module
+---------------------------------
+
+.. automodule:: charset_normalizer.legacy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.md module
+-----------------------------
+
+.. automodule:: charset_normalizer.md
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.models module
+---------------------------------
+
+.. automodule:: charset_normalizer.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.utils module
+--------------------------------
+
+.. automodule:: charset_normalizer.utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+charset\_normalizer.version module
+----------------------------------
+
+.. automodule:: charset_normalizer.version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: charset_normalizer
+   :members:
+   :undoc-members:
+   :show-inheritance:

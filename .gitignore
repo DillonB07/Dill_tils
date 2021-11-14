@@ -1,6 +1,5 @@
-/build
-/Dill_tils.egg-info
-/dill_tils.egg-info
-/dist
+/venv
+/.vscode
+.DS_STORE
 .dccache
 .env
