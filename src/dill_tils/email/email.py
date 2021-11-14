@@ -3,12 +3,19 @@ from email.message import EmailMessage
 
 
 class Email:
-    """Connect to SMTP server and send emails"""
+    """Connect to SMTP server and send emails
+
+        Keyword arguments:
+        recipient -- str: email address of recipient
+        sender -- str: email address of sender
+        password -- str: password of sender
+        server -- str: SMTP server (default 'smtp.yandex.com')
+        port -- int: SMTP port (default 465)
+
+    """
 
     def __init__(self, recipient: str, sender: str, password: str, server: str = 'smtp.yandex.com', port: int = 465):
-        """
-        Connect to SMTP server and set variables for Email class
-        """
+        """Connect to SMTP server and set self variables"""
         self.recipient = recipient
         self.sender = sender
         self.server = smtplib.SMTP_SSL(server, port)
@@ -16,7 +23,12 @@ class Email:
         print('Connected')
 
     def sendEmail(self, subject, message):
-        """Send an email using variables in self"""
+        """Send an email
+
+        Keyword arguments:
+        subject -- str: Email subject
+        message -- str: Email content/message
+        """
         email = f'Name: {self.name}\nEmail: {self.email}\nSubject: {self.subject}\nMessage: {message}'
         msg = EmailMessage()
         msg.set_content(email)
