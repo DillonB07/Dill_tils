@@ -9,7 +9,13 @@ def write(string: str, delay: float = 0.06):
     string -- str: Message to be written to the console.
     delay -- float: Delay between each character.
     """
-    for i in str(string):
-        print(i, end="", flush=True)
-        time.sleep(delay)
-    print()
+    try:
+        for i in str(string):
+            print(i, end="", flush=True)
+            time.sleep(delay)
+        print()
+        
+        return True
+
+    except Exception as e:
+        return False

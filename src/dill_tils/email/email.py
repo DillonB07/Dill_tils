@@ -19,10 +19,12 @@ class Email:
         self.recipient = recipient
         self.sender = sender
         self.server = smtplib.SMTP_SSL(server, port)
-        self.server.login(self.sender, password)
-        print('Connected')
+        try:
+            self.server.login(self.sender, password)
+        except Exception as e:
+            print(e)
 
-    def sendEmail(self, subject, message):
+    def send_email(self, subject, message):
         """Send an email
 
         Keyword arguments:
