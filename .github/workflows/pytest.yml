@@ -23,7 +23,7 @@ jobs:
           python-version: '3.x'
         
       - name: Install dependencies
-        run: pip install --upgrade pytest dill_tils
+        run: pip install --upgrade pytest dill_tils python-dotenv
 
       - name: Run pytest
         run: pytest
