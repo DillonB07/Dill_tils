@@ -1,25 +1,6 @@
-[tool.poetry]
-name = "dill_tils"
-version = "1.0.4"
-description = "A collection of DillonB07's utilities"
-authors = ["DillonB07 <dillonbarnes07@gmail.com>"]
-license = "lgpl-3.0"
-
-[tool.poetry.dependencies]
-python = "3.6"
-dill-tils = "^1.0.4"
-
-[tool.poetry.dev-dependencies]
-Sphinx = "^4.3.0"
-autopep8 = "^1.6.0"
-sphinx-rtd-theme = "^1.0.0"
-pytest = "^6.2.5"
-
 [build-system]
 requires = [
     "setuptools>=42",
-    "wheel",
-    "setuptools.build_meta",
-    "poetry-core>=1.0.0"
+    "wheel"
 ]
-build-backend = ["setuptools.build_meta", "poetry.core.masonry.api"]
+build-backend = "setuptools.build_meta"

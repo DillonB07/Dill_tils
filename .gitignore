@@ -3,6 +3,8 @@
 /.pytest_cache
 # */__pycache__
 *\__pycache__
+*\dist
+*\dill_tils.egg-info
 .DS_STORE
 .dccache
 .env
