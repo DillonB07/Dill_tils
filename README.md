@@ -1,5 +1,11 @@
 # DilllonB07 Utilities
 
+![PyPI](https://img.shields.io/pypi/v/dill-tils?color=blue&label=PyPi&logo=pypi&logoColor=yellow)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/dill-tils?color=blue&label=Downloads&logo=pypi&logoColor=yellow)
+![PyPI - Format](https://img.shields.io/pypi/format/dill-tils?color=blue&&label=Format&logo=pypi&logoColor=yellow)
+![PyPI - Status](https://img.shields.io/pypi/status/dill-tils?color=blue&label=Status&logo=pypi&logoColor=yellow)
+![PyPI - License](https://img.shields.io/pypi/l/dill-tils?color=blue&label=License&logo=pypi&logoColor=yellow)
+
 Dill_tils is a package that has my commonly used functions inside it for ease of use.
 
 ## Installation
