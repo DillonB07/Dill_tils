@@ -14,7 +14,7 @@ def test_login():
     port = int(os.environ['PORT'])
     e = Email(recipient, sender, password, server, port)
     output = e.__init__(recipient, sender, password, server, port)
-    assert output == None
+    assert output is None
 
 
 def test_send():
