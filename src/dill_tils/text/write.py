@@ -2,7 +2,7 @@ import time
 import os
 
 
-def write(string: str, delay: float = 0.06):
+def write(string: str, delay: float = 0.03):
     """Print text to the console as if it was being typed.
 
     Keyword arguments:
